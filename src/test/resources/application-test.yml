@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:tc:postgis:9.6.8-2.5://localhost/jpa-spatial
+    username: portal
+    password: uhSBTvdHCnS7pyUgOTDX
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    hikari:
+      driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+  jpa.properties.hibernate:
+    show-sql: true
+    format_sql: true
+    jdbc.lob.non_contextual_creation: true
+    dialect: org.hibernate.spatial.dialect.postgis.PostgisDialect
